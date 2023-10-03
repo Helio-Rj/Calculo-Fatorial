@@ -1,0 +1,19 @@
+def fatorial():
+    n = int(input('Digite um N° para o calculo de seu fatorial: '))
+
+    c = n  # Contador recebe "n"
+
+    f = 1  # para se trabalhar com fatoreal lembresse de calcular começando por "1"
+
+    print(f'Calculando o fatoreal {n}! = ', end='')
+
+    while c > 0:  # Enquanto o contador for maior que zero
+
+        print(f'{c}', end='')  # para não pular linha e ficar todos na mesma linha
+        print(' x ' if c > 1 else ' = ', end='')  # if dentro de linha de comando.
+        f = f * c  # Variável "f" recebe "f" vezes "c""
+        c -= 1  # Variável "c" recebe c - 1 #
+    print(f'{f}')
+
+
+fatorial()
